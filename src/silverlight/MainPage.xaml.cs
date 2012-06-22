@@ -244,13 +244,13 @@ namespace SilverlightMediaElement
 					}
 
 					StopTimer();
-					SendEvent("paused");
+					SendEvent("pause");
 					break;
 				case MediaElementState.Stopped:
 					_isEnded = false;
 					_isPaused = true;
 					StopTimer();
-					SendEvent("paused");
+					SendEvent("pause");
 					break;
 				case MediaElementState.Buffering:
 					SendEvent("progress");
